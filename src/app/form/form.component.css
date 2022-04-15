@@ -4,3 +4,13 @@ form{
     justify-content: center;
     align-items: center;
 }
+input[type=text]{
+    background-color: transparent;
+    width: 30vw;
+  }
+  h3{
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }

@@ -1,0 +1,21 @@
+.container{
+    
+}
+
+.header{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.repo{
+    
+    margin-right: 250px;
+    padding: 20px ;
+}
+/* .image{
+    
+    margin-left: 100px;
+    text-align: center;
+} */

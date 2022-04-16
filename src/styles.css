@@ -2,6 +2,10 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 body{
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwjslKBtVoGRNzK8XHBRs6Ld2Xh5yFxzPNQ&usqp=CAU");
+    background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover;
     margin: 0;
     padding: o;
     box-sizing: border-box;

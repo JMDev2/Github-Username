@@ -11,11 +11,20 @@
 }
 .repo{
     
-    margin-right: 250px;
+    margin-right: 200px;
     padding: 20px ;
 }
-/* .image{
-    
-    margin-left: 100px;
-    text-align: center;
-} */
+
+
+.body{
+    border: 1px solid #FF758F;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: auto;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around ;
+    padding: 40px;
+    gap: 10px;
+}

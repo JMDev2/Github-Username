@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Users } from '../users';
+import { Repository } from '../repository';
+import { Observable } from 'rxjs';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-details',
@@ -7,9 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  user!: any
+
+  constructor(private getDetails: ServiceService) { }
 
   ngOnInit(): void {
+    this.getDetails.getUser().subscribe(
+      user=>{
+        this.user = user;
+        console.log(user)
+      }
+    )
   }
+
+ 
 
 }

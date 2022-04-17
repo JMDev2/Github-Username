@@ -11,18 +11,26 @@ import { ServiceService } from '../service.service';
 })
 export class DetailsComponent implements OnInit {
 
-  user!: any
+  data!: any
+  repo!: any;
 
   constructor(private getDetails: ServiceService) { }
 
   ngOnInit(): void {
     this.getDetails.getUser().subscribe(
-      user=>{
-        this.user = user;
-        console.log(user)
+      data=>{
+        this.data = data;
+        console.log(data)
+      }
+    )
+    this.getDetails.getRepo().subscribe(
+      repo=>{
+        this.repo = repo;
+        console.log(repo)
       }
     )
   }
+
 
  
 

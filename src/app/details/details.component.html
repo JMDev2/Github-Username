@@ -13,9 +13,9 @@
                     <div class="card-body">
                         <div >
                             <div class="image" style="width:100%; text-align:center">
-                              <img src="{{user.avatar_url}}" alt="">
+                              <img src="{{data.avatar_url}}" alt="">
                             </div>
-                            <p class="name"><u> {{user.name}} </u></p>
+                            <p class="name"><u> {{data.name}} </u></p>
                           </div>
                     </div>
                   </div>
@@ -25,9 +25,9 @@
                 <div class="card repo">
                     <div class="card-body">
                         <div class="repo">
-                            <p>Username:{{user.login}}</p>
-                            <p>Location:{{user.location}}</p>
-                            <p>Bio: {{user.bio}}</p>
+                            <p>Username:{{data.login}}</p>
+                            <p>Location:{{data.location}}</p>
+                            <p>Bio: {{data.bio}}</p>
                           </div>
                     </div>
                   </div>
@@ -37,8 +37,13 @@
             <hr>
 
             <!-- main body -->
-            <div class="body"> 
-
+            <div class="body" *ngFor = "let repo of repo"> 
+   
+                <p>{{repo.name}}</p>
+                <p>{{repo.description}}</p>
+                <p>{{repo.created_at | date}}</p>
+                <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+              
             </div>
             
         </div>

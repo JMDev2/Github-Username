@@ -27,6 +27,7 @@
     justify-content:space-around ;
     padding: 40px;
     gap: 10px;
+    background-image: url(https://s.cdpn.io/44759/Wood-Backgrounds-Picture.jpg);
 }
 .repoHead{
     
@@ -35,6 +36,22 @@
 
 }
 .card1{
-    background-color: aquamarine;
+    
     align-items: center;
+    background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  
+    
+}
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+.card2{
+   
+    align-items: center;
+    width: 80%;
+    margin-left: 40px;
+    margin-top: -20px;
 }

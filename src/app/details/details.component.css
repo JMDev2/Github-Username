@@ -1,4 +1,5 @@
 .container{
+    display: inline-block;
     
 }
 
@@ -20,8 +21,8 @@
     border: 1px solid;
     box-sizing: border-box;
     border-radius: 3px;
-    height: auto;
-    width: 50%; 
+    /* height: 50%; */
+    width: 40%; 
     display: flex;
     flex-direction: column;
     justify-content:space-around ;
@@ -46,8 +47,25 @@
 }
 @keyframes example {
     0%   {background-color: red;}
+    5%  {background-color: yellow;}
+    10%  {background-color: blue;}
+    15% {background-color: green;}
+    20%   {background-color: red;}
     25%  {background-color: yellow;}
+    30%  {background-color: blue;}
+    35% {background-color: green;}
+    40%   {background-color: red;}
+    45%  {background-color: yellow;}
     50%  {background-color: blue;}
+    55% {background-color: green;}
+    60%   {background-color: red;}
+    65%  {background-color: yellow;}
+    70%  {background-color: blue;}
+    75% {background-color: green;}
+    80%  {background-color: yellow;}
+    85%  {background-color: blue;}
+    90% {background-color: green;}
+    95%  {background-color: blue;}
     100% {background-color: green;}
     
   }
@@ -63,18 +81,20 @@
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 300px;
+    height: 100px;
     perspective: 1000px;
   }
   
   .flip-card-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 40%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    align-items: center;
+    margin-left: 40px;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -99,3 +119,44 @@
     color: white;
     transform: rotateY(180deg);
   }
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateX(180deg);
+}

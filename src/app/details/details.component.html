@@ -35,14 +35,26 @@
                
             </div>
             <hr>
-            <p class="repoHead">Rep<span><u>osit</u></span>ory</p>
+            <p class="repoHead">Re<span><u>posito</u></span>ry</p>
             <!-- main body -->
             <div class="body" *ngFor = "let repo of repo"> 
-   
-                <p>Description: {{repo.name}}</p>
-                <p>Project Name: {{repo.description}}</p>
+              <div class="card card1">
+                <div class="card-body">
+                  <p>Description: {{repo.name}}</p>
+                  <p>Project Name: {{repo.description}}</p>
                 <p>Date Created: {{repo.created_at | date}}</p>
-                <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+                </div>
+              </div>
+
+              <div class="card card2">
+                <div class="card-body">
+                  <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+                </div>
+              </div>
+   
+                
+                
+                
               
             </div>
             

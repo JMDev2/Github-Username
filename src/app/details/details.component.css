@@ -17,11 +17,11 @@
 
 
 .body{
-    border: 1px solid #FF758F;
+    border: 1px solid;
     box-sizing: border-box;
     border-radius: 3px;
     height: auto;
-    width: 100%; 
+    width: 50%; 
     display: flex;
     flex-direction: column;
     justify-content:space-around ;
@@ -33,4 +33,8 @@
     text-align: center;
     font-size: 30px;
 
+}
+.card1{
+    background-color: aquamarine;
+    align-items: center;
 }

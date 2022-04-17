@@ -23,8 +23,6 @@ export class ServiceService {
   }
 
   constructor(private http: HttpClient) { }
-  // getUsers(): Observable<Users>{
-  //   return this.http.get<Users>(this.BASE_URL +`Username`)
-
+  
   }
 

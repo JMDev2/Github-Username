@@ -3,79 +3,97 @@
 
 <!-- the heading -->
 
-<div class="container">
-    <div class="card">
-        <div class="card-body">
-            <div class="header">
-    
-                <!-- image -->
-                <div class="card">
-                    <div class="card-body">
-                        <div >
-                            <div class="image" style="width:100%; text-align:center">
-                              <img src="{{data.avatar_url}}" alt="">
-                            </div>
-                            <p class="name"><u> {{data.name}} </u></p>
-                          </div>
-                    </div>
-                  </div>
+<div class="Container">
+  <div class="cardd">
+    <div class="image" style="width:70%; text-align:center">
+      <img src="{{data.avatar_url}}" alt="">
 
-                  
-                
-        
-                <!-- Repo Inforamation -->
-                <div class="card repo">
-                    <div class="card-body">
-                        <div class="repo">
-                            <p>Username:{{data.login}}</p>
-                            <p>Location:{{data.location}}</p>
-                            <p>Bio: {{data.bio}}</p>
-                          </div>
-                    </div>
-                  </div>
+      <div class="containerr">
+           <p>Username:{{data.login}}</p>
+            <p>Location:{{data.location}}</p>
+            <p>Bio: {{data.bio}}</p>
+       </div>
+     </div>  
+  </div>
 
-                  
-                
-               
-            </div>
-            <hr>
-            <p class="repoHead">Re<span><u>posito</u></span>ry</p>
-            <!-- main body -->
-            <div class="body" *ngFor = "let repo of repo"> 
-              <div class="card card1">
+  
+  
+  <div class="card">
+    <div class="card-body">
+        <div class="header">
+          
+
+            <!-- image -->
+            <!-- <div class="card myImage">
                 <div class="card-body">
-                  <p>Description: {{repo.name}}</p>
-                  <p>Project Name: {{repo.description}}</p>
-                <p>Date Created: {{repo.created_at | date}}</p>
-                </div>
-              </div>
-
-              
-
-              <!-- <div class="card card2">
-                <div class="card-body">
-                  <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+                    <div >
+                        <div class="image" style="width:70%; text-align:center">
+                          <img src="{{data.avatar_url}}" alt="">
+                        </div>
+                        <p class="name"><u> {{data.name}} </u></p>
+                      </div>
                 </div>
               </div> -->
-   
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
-                  </div>
-                  <div class="flip-card-back">
-                    <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
-                  </div>
-                </div>
-              </div>
-                
-                
-                
+
               
-            </div>
             
+    
+            <!-- Repo Inforamation -->
+            <!-- <div class="card repo">
+                <div class="card-body">
+                    <div class="repo">
+                        <p>Username:{{data.login}}</p>
+                        <p>Location:{{data.location}}</p>
+                        <p>Bio: {{data.bio}}</p>
+                      </div>
+                </div>
+              </div> -->
+
+               
+            
+           
         </div>
-      </div>
+        <hr>
+       <div id="myDIV">
+        <p class="repoHead">Re<span><u>posito</u></span>ry</p>
+        <!-- main body -->
+        <div class="body" *ngFor = "let repo of repo"> 
+          <div class="card card1">
+            <div class="card-body">
+              <p>Description: {{repo.name}}</p>
+              <p>Project Name: {{repo.description}}</p>
+            <p>Date Created: {{repo.created_at | date}}</p>
+            </div>
+          </div>
+
+          
+
+          <!-- <div class="card card2">
+            <div class="card-body">
+              <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+            </div>
+          </div> -->
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+              </div>
+              <div class="flip-card-back">
+                <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+              </div>
+            </div>
+          </div>
+            
+            
+            
+          
+        </div>
+        
+    </div>
+  </div>
+       </div>
+
 
 
       
@@ -86,5 +104,7 @@
 
 
     
-</div>
+
+
+
 

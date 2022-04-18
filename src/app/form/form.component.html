@@ -1,16 +1,17 @@
 
 
-<!-- <h3>Know someone in Github?</h3>
-<form>
+  <h3>Know someone in Github?</h3>
+<form (ngSubmit)="searchData(username)">
     
-    <div class="row">
-      <div class="col">
+    
            
-    <input type="search" class="form-control" placeholder="search" [(ngModel)]='username' (keyup)="findUser()">
-      </div>
-      <div class="col">
-         <button type="button" class="btn btn-success" (click)="searchUser()">Success</button>
-      </div>
-    </div>
-  </form> -->
-  <!-- <hr> -->
+         <input type="search" class="form-control" placeholder="search" [(ngModel)]="username" name="username" >
+      
+         <button type="submit" class="btn btn-success">Search</button>
+      
+  </form> 
+
+ 
+
+  
+   

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { lastValueFrom, Observable } from 'rxjs';
 import { Users } from './users';
 
 
@@ -9,17 +9,20 @@ import { Users } from './users';
   providedIn: 'root'
 })
 export class ServiceService {
-  username = "JOSEPHMAINA1995"
+  // username = "JOSEPHMAINA1995"
 
-  BASE_URL = `https://api.github.com/users/${this.username}`
-  REPO_URL = `https://api.github.com/users/${this.username}/repos`
-
-  getUser(): Observable<any>{
-    return this.http.get<any>(this.BASE_URL)
+  BASE_URL = "https://api.github.com"
+  async getUser(username: string){
+    const person = this.http.get<any>(`${this.BASE_URL}/users/${username}`)
+    return await lastValueFrom(person).then((response)=>
+      response
+    )
   }
 
-  getRepo(): Observable<any>{
-    return this.http.get<any>(this.REPO_URL)
+  getRepo(username: string): Observable<any>{
+    return this.http.get<any>(`${this.BASE_URL}/users/${username}/repos`)
+
+
   }
 
   constructor(private http: HttpClient) { }

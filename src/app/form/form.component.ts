@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { ServiceService } from '../service.service';
+
 
 @Component({
   selector: 'app-form',
@@ -6,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
+  @Output() newPerson = new EventEmitter()
+  username: string = ""
 
-  constructor() { }
+  searchData(username: string){
+    this.newPerson.emit(username)
+  }
+
+
+  constructor(private serviceService: ServiceService) { }
 
   ngOnInit(): void {
   }
-  // searchUser(){
-
-  // }
-
+  
+  
 }

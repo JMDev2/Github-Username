@@ -1,9 +1,16 @@
 export class Users {
-    public login!: string;
-    public id: string;
-    public avatar_url: string;
-    public followers_url: string;
-    public email: string;
-    public followers: Users[];
+    
+
+    constructor(public login: string,
+        public location: string,
+        public bio: string,
+        public name: string,
+        public avatar_url: string,
+        public followers: string,
+        public following: string){
+
+    }
 
 }
+
+ 

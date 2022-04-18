@@ -1,6 +1,4 @@
 
-
-<app-form></app-form>
 <!-- the heading -->
 
 <div class="Container">
@@ -26,44 +24,27 @@
      </div>  
   </div>
 
-  
-  
-
-      
-           
-       
-      
-
-  
-  
-  
   <div class="card">
     <div class="card-body">
         <div class="header">
-          
+          </div>
 
-        </div>
+        <app-form (newPerson)="getOutput($event)"></app-form>
         <hr>
+
        <div id="myDIV">
         <p class="repoHead">Re<span><u>posito</u></span>ry</p>
         <!-- main body -->
         <div class="body" *ngFor = "let repo of repo"> 
-          <div class="card card1">
-            <div class="card-body">
+          <div class="card card1" style="float: left;">
+            <div class="card-body" >
               <p>Description: {{repo.name}}</p>
               <p>Project Name: {{repo.description}}</p>
-            <p>Date Created: {{repo.created_at | date}}</p>
+              <p>Date Created: {{repo.created_at | date}}</p>
             </div>
           </div>
 
-          
-
-          <!-- <div class="card card2">
-            <div class="card-body">
-              <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
-            </div>
-          </div> -->
-
+        
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
@@ -76,14 +57,11 @@
             </div>
           </div>
             
-            
-            
-          
         </div>
         
     </div>
-  </div>
-       </div>
+  </div> 
+</div>
 
 
 

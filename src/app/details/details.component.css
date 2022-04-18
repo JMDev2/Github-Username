@@ -54,9 +54,12 @@
     width: 40%; 
     display: flex;
     flex-direction: column;
-    justify-content:space-around ;
+    justify-content:space-between;
     padding: 40px;
-    gap: 10px;
+    float: right;
+    margin-right: 60px;
+    padding-left: -90px;
+    margin-top: 30px;
     background-image: url(https://s.cdpn.io/44759/Wood-Backgrounds-Picture.jpg);
 }
 .repoHead{
@@ -156,5 +159,8 @@
   background-color: aquamarine;
   float: right;
   width: 60%;
+  margin-top: 20px;
+  margin-right: 40px;
+  padding-left: 30px;
 
 }

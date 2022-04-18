@@ -4,8 +4,8 @@ form{
     justify-content: center;
     align-items: center;
 }
-input[type=text]{
-   background-color: transparent;
+input[type=search]{
+    
     width: 25vw;
     text-align: center;
   }

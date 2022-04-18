@@ -5,13 +5,25 @@ form{
     align-items: center;
 }
 input[type=text]{
-    background-color: transparent;
-    width: 30vw;
+   background-color: transparent;
+    width: 25vw;
     text-align: center;
   }
+  button{
+      margin-left: 20px;
+  }
   h3{
-      padding-top: 20px;
+      
       display: flex;
       justify-content: center;
       align-items: center;
   }
+  .card{
+      width: 60%;
+      border-radius: 30px;
+      float: right;
+      margin-top: 40px;
+      margin-right: 40px;
+      align-content: center;
+  }
+  

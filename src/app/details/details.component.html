@@ -1,21 +1,40 @@
+
+
 <app-form></app-form>
-
-
 <!-- the heading -->
 
 <div class="Container">
+  <div class="card infor">
+    <div class="card-body">
+      <p>Username:{{data.login}}</p>
+      <p>Location:{{data.location}}</p>
+      <p>Bio: {{data.bio}}</p>
+      <p>Followers: {{data.followers}} Poeple</p>
+      <p>Following: {{data.following}} Poeple</p>
+            
+    </div>
+  </div>
   <div class="cardd">
     <div class="image" style="width:70%; text-align:center">
       <img src="{{data.avatar_url}}" alt="">
 
       <div class="containerr">
-           <p>Username:{{data.login}}</p>
-            <p>Location:{{data.location}}</p>
-            <p>Bio: {{data.bio}}</p>
+           <p>{{data.name}}</p>
+
+            
        </div>
      </div>  
   </div>
 
+  
+  
+
+      
+           
+       
+      
+
+  
   
   
   <div class="card">
@@ -23,35 +42,6 @@
         <div class="header">
           
 
-            <!-- image -->
-            <!-- <div class="card myImage">
-                <div class="card-body">
-                    <div >
-                        <div class="image" style="width:70%; text-align:center">
-                          <img src="{{data.avatar_url}}" alt="">
-                        </div>
-                        <p class="name"><u> {{data.name}} </u></p>
-                      </div>
-                </div>
-              </div> -->
-
-              
-            
-    
-            <!-- Repo Inforamation -->
-            <!-- <div class="card repo">
-                <div class="card-body">
-                    <div class="repo">
-                        <p>Username:{{data.login}}</p>
-                        <p>Location:{{data.location}}</p>
-                        <p>Bio: {{data.bio}}</p>
-                      </div>
-                </div>
-              </div> -->
-
-               
-            
-           
         </div>
         <hr>
        <div id="myDIV">
@@ -81,6 +71,7 @@
               </div>
               <div class="flip-card-back">
                 <p><a href="{{repo.html_url}}"> Visit the Repo</a> </p>
+                
               </div>
             </div>
           </div>

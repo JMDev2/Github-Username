@@ -7,17 +7,6 @@
     
 }
 
-/* #myDIV {
-    
-    columns: 2;
-  } */
-/* .Container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}  */
 
 .cardd {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -163,3 +152,9 @@
     transform: rotateY(180deg);
   }
 
+.infor{
+  background-color: aquamarine;
+  float: right;
+  width: 60%;
+
+}

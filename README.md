@@ -1,27 +1,41 @@
 # GithubRepoSearch
-
+By Mwangi Joseph Maina
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-## Development server
+##Description
+This is a webiste that Displays the Github user profile. It allows one to search for their profiles and let them view their details such as Repositories and the links to navigate through, their followers and many other attributes.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+##BDD
+The user is able to;
 
-## Code scaffolding
+1.Search for GitHub user
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1.Can't request an empty input
 
-## Build
+1.Search for a repo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1.Get repos details
 
-## Running unit tests
+##Cloning the Repo
+1.Make sure you have a stable internet to have the ability to clone the repository.
+1.Type the following command in your terminal to clone this repository
+git clone https://github.com/JOSEPHMAINA1995/Github-Username.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+use the command to start the application and lauch it n your browser:
 
-## Running end-to-end tests
+ng serve --open
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##Technologies used
+1.HTML5
+1.CSS3
+1.Angular
+1.Typescript
+1.Material Angular
+1.Bootstrap
+This project was generated with Angular CLI version 13.2.6.
 
-## Further help
+### Live Site
+View [Live] https://josephmaina1995.github.io/My-Quotes/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+##Licence
+Copyright (c) JOSEPH MAINA 2022 - MIT Licence

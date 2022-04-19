@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormComponent } from './form/form.component';
 import { DetailsComponent } from './details/details.component';
+import { HighlightDirective } from './highlight.directive';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { DetailsComponent } from './details/details.component';
     NavbarComponent,
     FormComponent,
     DetailsComponent,
+    HighlightDirective,
     
     
 

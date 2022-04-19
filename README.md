@@ -51,4 +51,4 @@ View [Live]
 
 ## Licence
 
-Copyright (c) JOSEPH MAINA 2022 - MIT Licence
+Copyright (c) JOSEPH MAINA 2022 - [MIT](license) license

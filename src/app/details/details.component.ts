@@ -12,11 +12,8 @@ import { ServiceService } from '../service.service';
 })
 export class DetailsComponent implements OnInit {
   username = "JOSEPHMAINA1995"
-  // users = new Users ("","","","","","","")
-  // data: Users = new Users("","","","","","","")
   data!: any
   repo!: any
-  // repo: Repository [] = []
 
   constructor(private serviceService: ServiceService) { }
 
@@ -43,7 +40,7 @@ export class DetailsComponent implements OnInit {
     this.serviceService.getUser(username).then(
       (data)=>(
         this.data = data
-       
+
       )
     )
   }
@@ -61,8 +58,4 @@ export class DetailsComponent implements OnInit {
     this.getRepos(this.username)
 
   }
-
-
-  
-
 }

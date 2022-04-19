@@ -15,11 +15,9 @@ export class FormComponent implements OnInit {
     this.newPerson.emit(username)
   }
 
-
   constructor(private serviceService: ServiceService) { }
 
   ngOnInit(): void {
   }
-  
   
 }

@@ -9,7 +9,7 @@ import { Users } from './users';
   providedIn: 'root'
 })
 export class ServiceService {
-  // username = "JOSEPHMAINA1995"
+  
 
   BASE_URL = "https://api.github.com"
   async getUser(username: string){
